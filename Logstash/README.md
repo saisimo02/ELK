@@ -119,7 +119,37 @@ output {
 ```
 * We can set one or more outputs if we have an elasticsearch cluster `hosts => ["es1:9200","es2:9200","es3:9200"]"`
 * We can set a different index for each file, for example for csv-files, we define an index 'csv-files' `index => "csv-files"`
+# Example of Logstash config file
 
+```
+input {
+        kafka {
+        bootstrap_servers => "server_kafka1:9092,server_kafka2:9092,server_kafka3:9092"
+        group_id => "central-logging"
+        topics =>  ["csv-topic"]
+    }
+
+}
+filter{
+
+        json {
+            source => "message" target=> "theCSV"
+              }
+        csv {
+            source => "[theCSV][message]"
+            separator => ";"
+            }
+      }
+      
+output {
+   elasticsearch {
+     hosts => "http://elastic_ip:9200"
+     index => "index_name"
+                 }
+   }
+      
+
+```
 # Start logstash
 ```
 $ sudo systemctl start logstash

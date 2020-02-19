@@ -1,4 +1,4 @@
-* In this section, I will explain how to install and set-up a Kafka cluster on Centos/RedHat. 
+In this section, I will explain how to install and set-up a Kafka cluster on Centos/RedHat. 
 # Introduction
 Apache Kafka is a scalable and high-throughtput messaging system designed to handle a huge amount of real-time data. You can deploy Kafka on a single server or multiple servers to build a distributed Kafka cluster for greater performance. We will show how to deploy a Kafka cluster with a minimum of 3 instances.
 

@@ -65,11 +65,11 @@ Do the same for the other instances by modifying the `broker.id` and the `advert
 Add a new file myid for your zookeeper server. The value after `echo` should be different for each instance.  
 Server1
 ```
-$ sudo echo 1 > /opt/kafka.zookeeper/myid
+$ sudo echo '1' > /opt/kafka.zookeeper/myid
 ```
 Server2
 ```
-$ sudo echo 1 > /opt/kafka.zookeeper/myid
+$ sudo echo '2' > /opt/kafka.zookeeper/myid
 ```
 ...    
 open the zookeeper properties file:

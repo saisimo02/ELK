@@ -165,7 +165,7 @@ WatchedEvent state:SyncConnected type:None path:null
 [1, 2, 3] <----
 
 ```
-# Create a new topics
+# Create new topics
 
 Create two topics `csv-topic` and `log-topic`
 

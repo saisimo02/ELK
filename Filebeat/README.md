@@ -1,3 +1,4 @@
+In this section, I will explain how to install and set-up Filebeat on Centos/RedHat.
 # Download
 Filebeat can be installed as a service otherwise you have to download the zip folder to extract (this solution could be useful to discover the tool or if you only have windows installed on your machine but not for a stable solution).  
 For the rest of this document, we use version 7.3 of filebeat, which can be downloaded at https://www.elastic.co/downloads/past-releases/filebeat-7-3-0  

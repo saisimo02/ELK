@@ -1,7 +1,7 @@
-In this section, I will explain how to install and set-up logstash on Centos/RedHat.
+In this section, I will explain how to install and set-up Logstash on Centos/RedHat.
 # Download
 Logstash can be installed as a service otherwise you have to download the zip folder to extract (this solution could be useful to discover the tool or if you only have windows installed on your machine but not for a stable solution).  
-For the rest of this document, we use version 7.3 of Elasticsearch, which can be downloaded at https://www.elastic.co/downloads/past-releases/logstash-7-3-0  
+For the rest of this document, we use version 7.3 of Logstash, which can be downloaded at https://www.elastic.co/downloads/past-releases/logstash-7-3-0  
 Choose the version that corresponds to your operating system.
 
 # Prerequisites

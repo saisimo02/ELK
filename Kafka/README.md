@@ -9,8 +9,7 @@ Apache Kafka is a scalable and high-throughtput messaging system designed to han
 4. Consumers : That read data from the cluster. (Logstash for example)
 
 
-# Prerequisites:
-There is 3 interestion paths to know:
+# Prerequisites
 - 3 CentOs servers and a user with sudo privileges.
 - Large memory capacity, at least 4 GB of RAM
 - OpenJDK installed
